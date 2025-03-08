@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematrix - Film Karşılaştırma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cinematrix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link" class="active">Ana Sayfa</a></li>
+                <li><a href="#" id="history-link">Seçim Geçmişi</a></li>
+                <li><a href="#" id="about-link">Hakkında</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section" class="active-section">
+            <div class="intro">
+                <h2>Hangi Film Daha İyi?</h2>
+                <p>İki filmden birini seç ve tercihlerini kaydet!</p>
+            </div>
+            
+            <div class="movie-container">
+                <div class="movie-card" id="movie-1">
+                    <div class="poster-container">
+                        <img src="" alt="Film posteri" class="movie-poster">
+                        <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Film Yükleniyor...</h3>
+                        <p class="movie-year"></p>
+                        <p class="movie-rating"><i class="fas fa-star"></i> <span></span></p>
+                        <div class="movie-genres"></div>
+                        <p class="movie-overview">Film bilgileri yükleniyor...</p>
+                        <button class="select-btn" data-id="">Bu Filmi Seç</button>
+                    </div>
+                </div>
+                
+                <div class="vs-circle">
+                    <span>VS</span>
+                </div>
+                
+                <div class="movie-card" id="movie-2">
+                    <div class="poster-container">
+                        <img src="" alt="Film posteri" class="movie-poster">
+                        <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Film Yükleniyor...</h3>
+                        <p class="movie-year"></p>
+                        <p class="movie-rating"><i class="fas fa-star"></i> <span></span></p>
+                        <div class="movie-genres"></div>
+                        <p class="movie-overview">Film bilgileri yükleniyor...</p>
+                        <button class="select-btn" data-id="">Bu Filmi Seç</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="next-pair">
+                <button id="skip-pair">Yeni Film Çifti Getir</button>
+            </div>
+        </section>
+        
+        <section id="history-section" class="hidden-section">
+            <h2>Seçim Geçmişiniz</h2>
+            <div id="history-container">
+                <div class="no-history">Henüz hiç seçim yapmadınız.</div>
+            </div>
+        </section>
+        
+        <section id="about-section" class="hidden-section">
+            <h2>Cinematrix Hakkında</h2>
+            <p>Cinematrix, film tutkunları için tasarlanmış eğlenceli bir film karşılaştırma platformudur. TMDB (The Movie Database) API'si kullanılarak rastgele filmler sunulur ve kullanıcıların tercihlerini kaydederek kişiselleştirilmiş bir film zevki profili oluşturulur.</p>
+            <p>Bu uygulama, film seçimleriniz üzerinden sizin film zevkinizi analiz etmeye yardımcı olur. Daha çok hangi tür, yönetmen veya dönem filmlerini tercih ettiğinizi görebilirsiniz.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Cinematrix. Tüm hakları saklıdır.</p>
+        <p>Film verileri <a href="https://www.themoviedb.org" target="_blank">TMDB</a> tarafından sağlanmaktadır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
